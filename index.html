@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samolet Test Framework</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="test-section">
+        <div class="test-slide">
+            <div class="test-control--back js--hidden">
+                <img src="https://static.tildacdn.com/tild3036-3834-4265-b132-313266626331/backArrow.svg" alt="">
+                <span>Назад</span>
+            </div>
+            <div class="slide-counter">Вопрос <span id="value">1</span> &nbsp;из 6</div>
+            <div class="slide-header">Question 1</div>
+            <div class="answer-container" data-slide="slide-1">
+                <div class="answer-button">Answer A</div>
+                <div class="answer-button">Answer B</div>
+                <div class="answer-button">Answer C</div>
+            </div>
+            <div class="test-control--forward button--disabled">Продолжить</div>
+
+            <div class="result-container js--hidden">
+                <img src="" alt="" class="result-container__img">
+                <div class="result-container__header"></div>
+                <div class="result-container__caption"></div>
+                <div class="result-container__disclaimer"></div>
+                <div class="result-container__row">
+                    <div class="restart-button">Пройти заново</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

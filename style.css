@@ -1,0 +1,255 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body * {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.test-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 60px 160px;
+  background: #e8f4ff;
+  width: 100%;
+}
+
+.test-section .section-header {
+  margin-bottom: 16px;
+}
+
+.test-section__disclaimer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.test-section__disclaimer span {
+  display: block;
+  color: #9199a3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.test-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 24px;
+  width: 100%;
+  height: 639px;
+  padding-top: 98px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.result-section {
+  padding-top: 80px !important;
+}
+
+.test-control--back {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.test-control--back {
+  color: #9199a3;
+  font-size: 16px;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.slide-header {
+  color: #333f48;
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+  margin-bottom: auto;
+}
+
+.slide-counter {
+  color: #9199a3;
+  text-align: right;
+  font-size: 16px;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slide-counter #value {
+  margin-left: 5px;
+  display: block;
+}
+
+.answer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer-button {
+  border-radius: 100px;
+  border: 1px solid #0085ca;
+  padding: 16px 24px;
+  color: #333f48;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: fit-content;
+  max-width: 310px;
+  margin-right: 6px;
+  margin-left: 6px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 390px;
+}
+
+.answer-button--extra-big {
+  max-width: 370px !important;
+}
+
+.answer-button--active {
+  background: #e8f4ff;
+  border: 1px solid #e8f4ff;
+}
+
+.test-control--forward {
+  border-radius: 100px;
+  background: #0085ca;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  width: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+}
+
+.button--disabled {
+  pointer-events: none;
+  background: #b1d7eb;
+}
+
+.result-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 110px;
+}
+
+.result-container__img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 60px;
+}
+
+.result-container__header {
+  color: #333f48;
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+
+  font-weight: 300;
+  max-width: 627px;
+}
+
+.result-container__header {
+  margin-bottom: 24px;
+}
+
+.result-container__caption {
+  color: #333f48;
+  text-align: center;
+  font-size: 18px;
+
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.result-container__disclaimer {
+  color: #9199a3;
+  font-size: 12px;
+
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.result-container__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.restart-button {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff !important;
+  width: 100%;
+  max-width: 304px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: #0085ca;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.restart-button + .section-link {
+  max-width: 304px;
+  height: 48px;
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.js--hidden {
+  display: none !important;
+}
